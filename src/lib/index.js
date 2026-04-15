@@ -1,13 +1,20 @@
+/**
+ * src/lib/index.js — single import point for all crypto + API helpers.
+ * Core logic: @blacksoft/blacksoft-library
+ * Env wiring:  src/config/env.js
+ */
+
 export {
-  apiGet,
-  apiPost,
-  defaultRequestOptions,
-  buildRequestPayload,
-  getResponse,
-  postResponse,
-  decryptResponseBodyWithPlain,
-  decryptResponseX,
-  responseXFromJson,
+  createDaycareClient,
   encrypt,
   decrypt,
-} from "./daycareApi.js";
+  responseTagFromJson,
+  responseXFromJson,
+  parseResponseJson,
+  decryptBody,
+  buildPayload,
+  get             as getResponse,
+  getWithDetails  as getResponseWithDetails,
+  post            as postResponse,
+  postWithDetails as postResponseWithDetails,
+} from "@blacksoft/blacksoft-library";

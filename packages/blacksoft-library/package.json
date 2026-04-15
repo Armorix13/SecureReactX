@@ -1,0 +1,35 @@
+{
+  "name": "@blacksoft/blacksoft-library",
+  "version": "1.0.0",
+  "description": "Encrypted API client for DayCareIt — AES-128-CBC compatible with Dart JavaStringEncryption",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "index.d.ts"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "daycareit",
+    "encryption",
+    "aes",
+    "aes-128-cbc",
+    "api-client",
+    "blacksoft"
+  ],
+  "author": "Blacksoft",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

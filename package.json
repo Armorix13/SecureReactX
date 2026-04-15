@@ -1,5 +1,5 @@
 {
-  "name": "dummy-project",
+  "name": "daycareit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "crypto-js": "^4.2.0",
+    "@blacksoft/blacksoft-library": "file:packages/blacksoft-library",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
